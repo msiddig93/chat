@@ -22,12 +22,12 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index($id)
-    { 
+    {
         return view('home');
     }
 
     public function allmessage()
-    { 
+    {
         return view('allmessage');
     }
     function jsonResponse(){

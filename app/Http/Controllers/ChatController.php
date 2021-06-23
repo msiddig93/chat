@@ -43,7 +43,7 @@ class ChatController extends Controller
         foreach ($chats as $chat) {
             if ($chat->sender != $auth_id) {
                 echo '<li class="left clearfix"><span class="chat-img pull-left">
-<img src="http://placehold.it/50/55C1E7/fff&text=' . mb_substr($user->name, 0, 1) . ' " alt="User Avatar" class="img-circle" />
+<img src="https://placeimg.com/100/100/any?2" alt="User Avatar" class="img-circle" />
 </span>
 <div class="chat-body clearfix">
     <div class="header">
@@ -56,7 +56,7 @@ class ChatController extends Controller
                   </li>';
             } else {
                 echo '<li id="' . $chat->id . '" class="right clearfix"><span class="chat-img pull-right">
-                <img src="http://placehold.it/50/FA6F57/fff&text=' . mb_substr(Auth::user()->name, 0, 1) . '" alt="User Avatar" class="img-circle" />
+                <img src="https://placeimg.com/100/100/any?2" alt="User Avatar" class="img-circle" />
             </span>
                 <div class="chat-body clearfix">
                     <div class="header">
@@ -178,27 +178,27 @@ class ChatController extends Controller
                 if (isset($message)) {
                     $srtmessage = Str::limit($message->message, 40);
                     echo '
-                <a onclick="singleSeenUpdate(' . $user->id . ')" href="' . $url . '/' . $user->id . '"> 
+                <a onclick="singleSeenUpdate(' . $user->id . ')" href="' . $url . '/' . $user->id . '">
                 <li class="left clearfix">
                         <span class="chat-img pull-left">
-                        <img alt="User Avatar" class="img-circle" src="http://placehold.it/25/55C1E7/fff&amp;text=U"></span>
+                        <img alt="User Avatar" class="img-circle" src="https://placeimg.com/100/100/any?2"></span>
                         <div class="chat-body clearfix">
                             <div class="header">
                              <strong class="primary-font">' . $user->name . $msg . '</strong>
                              <p style="color:black">
-                             
+
                             ' . $start_b . $srtmessage . $end_b . '
-                              
+
                              </p>
                             </div>
-                        
+
                         </div>
-                    </li>                   
+                    </li>
                 </a>
-                
-                
-                
-                
+
+
+
+
                 ';
                 }
             }

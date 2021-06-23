@@ -106,11 +106,18 @@ function singleSeenUpdate(id) {
 
 </script>
 
+<style>
+    .img-circle{
+        width: 50px;
+        height: 50px;
+    }
+</style>
+
 </head>
 
 <body>
 <input type="hidden"id="sound_check">
-<audio id="audio" src="https://notificationsounds.com/soundfiles/a86c450b76fb8c371afead6410d55534/file-sounds-1108-slow-spring-board.mp3" ></audio>
+<audio id="audio" src="https://audio-previews.elements.envatousercontent.com/files/91781623/preview.mp3" ></audio>
 
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
